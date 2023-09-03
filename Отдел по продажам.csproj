@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C21099E0-EAF7-41E0-AA3B-87056EC7FCF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Отдел_по_продажам</RootNamespace>
+    <AssemblyName>Отдел по продажам</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1616587232_18-p-temno-sinii-fon-dlya-prezentatsii-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1613211352_61-p-chisto-sinii-fon-bez-nichego-78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-city-5145171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-phone-call-5585836.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-user-456141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-cpu-3716484.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-electronics-5289697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-big-data-5474188.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-category-4989752.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-registered-trademark-7512981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-trademark-5009825.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-description-8386395.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-invoice-3494909.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-loupe-428094.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-discounts-792030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-receive-amount-2534217.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-payment-1255689.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-pos-terminal-2645228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-balance-6134807.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-user-6639836.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-truck-2331990.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-number-7660343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset-password.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
